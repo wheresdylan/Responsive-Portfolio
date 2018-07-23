@@ -53,7 +53,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+  position: static;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -218,11 +218,15 @@ input[type=submit] {
 
 @media screen and (max-width: 980px ) {
 
+  #main-container {
+    padding-top: 30px;
+  }
+
   .container{
-    width:730px;
+    width:900px;
   }
   .main-section {
-    width: 60%;
+    width: 80%;
   }
   #masthead {
    width: 100%;
@@ -231,8 +235,12 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 768px) {
+
+  #main-container {
+    padding-top: 30px;
+  }
   .container{
-    width:620px;
+    width:710px;
   }
 
   .main-section {
@@ -245,6 +253,10 @@ input[type=submit] {
 
 
 @media screen and (max-width: 640px) {
+  #main-container {
+    padding-top: 30px;
+  }
+
 .container{
   width:100%;
   }
@@ -252,17 +264,21 @@ input[type=submit] {
   .main-section {
     width: 95%;
     margin-left:10px;
+    margin-right: 10px;
   }
     #masthead {
     width: 100%;
+    margin: 0 0 0px;
   }
-  
+  #logo{
+    width:100%;
+  }
   nav{
+    text-align: center;
 		width: 100%;
 		padding-top: 10px;
 	}
   nav a{
-		width: 33.33%;
 		text-align: center;
 		margin-bottom: 10px;
 	}
